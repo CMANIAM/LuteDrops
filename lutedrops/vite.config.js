@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/lutedrops/',
+  base: '/LuteDrops/',
   plugins: [
     react(),
     VitePWA({
@@ -16,20 +16,17 @@ export default defineConfig({
         background_color: '#0d0d0d',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/lutedrops/',
+        start_url: '/LuteDrops/',
         icons: [
-          {
-            src: '/lutedrops/icon-192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/lutedrops/icon-512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
+          { src: '/LuteDrops/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/LuteDrops/icon-512.png', sizes: '512x512', type: 'image/png' }
         ]
       }
     })
   ]
 })
+```
+
+Click **Commit changes**, wait for the Action to go green, then try your link again:
+```
+https://YOURUSERNAME.github.io/LuteDrops/
